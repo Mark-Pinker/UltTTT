@@ -40,6 +40,7 @@ public class Game{
     }
     public static boolean move(int player,int large, int small){
         System.out.print("\033[H\033[2J");
+        System.out.flush();
         String text = "  ";
         int sRow = 0;
         int sCol = 0;
@@ -76,10 +77,6 @@ public class Game{
         if (board[lRow][lCol][sRow][sCol].equals(" - ")){
             board[lRow][lCol][sRow][sCol] = text;
             printBoard();
-            if (entireWins(player)){
-                System.out.println("Player " + player + " has won the game!");
-            }
-            System.out.print("\033[H\033[2J");
             return true;
         }
 
