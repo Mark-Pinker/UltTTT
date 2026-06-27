@@ -5,6 +5,8 @@ This is Ultimate Tic Tac Toe which is Tic Tac Toe within Tic Tac Toe, which mean
 make determines which Tic Tac Toe board your opponent has to play in. When a board is full, you can simply choose which one. This program allows you to play that,
 guiding you through each step
 
+<img width="408" height="542" alt="Screenshot 2026-06-27 180650" src="https://github.com/user-attachments/assets/659108c3-6391-432d-898e-627fd38f917c" />
+
 This is a game I learned about from Michael Vsauce and I learned Java and 2d arrays in my AP Computer Science A class so I thought 
 It would be a complicated challenge for me. It somewhat was but after a bit of thinking, I managed to make it work. Displaying the original board
 is actually the hardest part and took me a bit since it was a board within boards. But now it's complete and works as a game that you can play with 
@@ -18,6 +20,7 @@ life, so I wouldn't know the strategy needed to play.
 You can just copy and paste this and run it in any java complier. Nothing too complicated
 
                     GNU GENERAL PUBLIC LICENSE
+
                        Version 3, 29 June 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
