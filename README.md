@@ -1,11 +1,14 @@
-This is Ultimate Tic Tac Toe, a game I learned about from Michael Vsauce and I learned Java and 2d arrays in my AP Computer Science A class so I thought 
-It would be a complicated challenge for me. It somewhat was but after a bit of thinking, I managed to make it work. Displaying the original board
-is actually the hardest part and took me a bit since it was a board within boards. But now it's complete and works as a game that you can play with 
-your friends. 
+Ultimate Tic Tac Toe
+A game that is Tic Tac Toe within Tic Tac Toe where you play against your opponent and your moves affect which Tic Tac Toe board they can go in.
 
 This is Ultimate Tic Tac Toe which is Tic Tac Toe within Tic Tac Toe, which means you have to win at least three separate Tic Tac Toe games to win. Each move you
 make determines which Tic Tac Toe board your opponent has to play in. When a board is full, you can simply choose which one. This program allows you to play that,
 guiding you through each step
+
+This is a game I learned about from Michael Vsauce and I learned Java and 2d arrays in my AP Computer Science A class so I thought 
+It would be a complicated challenge for me. It somewhat was but after a bit of thinking, I managed to make it work. Displaying the original board
+is actually the hardest part and took me a bit since it was a board within boards. But now it's complete and works as a game that you can play with 
+your friends. 
 
 The defining part of this project is the 4d array which was used because it allowed the code to go through each section easily and didn't require something like
 a string or nine separate defined arrays that then make up the 2d array of 2d arrays. Hopefully one day I will make an algorithm that can play against the player
