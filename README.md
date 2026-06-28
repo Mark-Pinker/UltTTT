@@ -1,6 +1,11 @@
 Ultimate Tic Tac Toe
 A game that is Tic Tac Toe within Tic Tac Toe where you play against your opponent and your moves affect which Tic Tac Toe board they can go in.
 
+You can just copy and paste this and run it in any java complier. Nothing too complicated. You can also click this link https://onecompiler.com/java/44tmrdy28. One thing is that the System.out.print("\033[H\033[2J"); statements sometimes don't work in all compliers so you may need-replace it with the Game.clear() function
+
+The main controls are the number buttons 1-9 where each number corresponds to a board/space. You choose the board/space you want to play in by typing the corresponding number 
+according to the diagram shown in game.
+
 This is Ultimate Tic Tac Toe which is Tic Tac Toe within Tic Tac Toe, which means you have to win at least three separate Tic Tac Toe games to win. Each move you
 make determines which Tic Tac Toe board your opponent has to play in. When a board is full, you can simply choose which one. This program allows you to play that,
 guiding you through each step
@@ -17,7 +22,6 @@ a string or nine separate defined arrays that then make up the 2d array of 2d ar
 but right now, I wouldn't know how to start due to the complicated nature of the game and the fact that I don't have a good method of playing the game in everyday
 life, so I wouldn't know the strategy needed to play.
 
-You can just copy and paste this and run it in any java complier. Nothing too complicated
 
                     GNU GENERAL PUBLIC LICENSE
 
