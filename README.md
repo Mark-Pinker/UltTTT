@@ -1,7 +1,9 @@
 Ultimate Tic Tac Toe
 A game that is Tic Tac Toe within Tic Tac Toe where you play against your opponent and your moves affect which Tic Tac Toe board they can go in.
 
-You can just copy and paste this and run it in any java complier. Nothing too complicated. You can also click this link https://onecompiler.com/java/44tmrdy28. One thing is that the System.out.print("\033[H\033[2J"); statements sometimes don't work in all compliers so you may need to replace it with the Game.clear(); function which is already added.
+You can just copy and paste this and run it in any java complier. Nothing too complicated. You can also click this link https://onecompiler.com/java/44tmrdy28. Drag the left side of 
+the screen all the way to the left and press run. One thing is that the System.out.print("\033[H\033[2J"); statements sometimes don't work in all compliers so you may need to replace
+it with the Game.clear(); function which is already added. The code played in the link above has the Game.clear function already so you can also copy and paste that.
 
 The main controls are the number buttons 1-9 where each number corresponds to a board/space. You choose the board/space you want to play in by typing the corresponding number 
 according to the diagram shown in game.
