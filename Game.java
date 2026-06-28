@@ -81,6 +81,13 @@ public class Game{
 
         return false;
     }
+    public static void clear(){
+        int spaces = 30;
+        while (spaces > 0){
+            System.out.println("");
+            spaces--;
+        }
+    }
     public static boolean checkFullness(int large){
         int lRow = 0;
         int lCol = 0;

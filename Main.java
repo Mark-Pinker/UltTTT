@@ -58,7 +58,7 @@ public class Main {
                         Game.printBoard();
                         System.out.println("Please enter a valid number");
                     }
-                    if(Game.checkFullness(large)){
+                    if(Game.checkFullness(large) && (large >= 1 && large <=9)){
                         Game.printBoard();
                         System.out.println("That board is full, please choose another one");
                         boardChoice = true;
@@ -73,14 +73,15 @@ public class Main {
                     System.out.println("What box do want to go in. \n Formatted as \n [1] [2] [3] \n [4] [5] [6] \n [7] [8] [9]");
                     small = input.nextInt();
                     System.out.print("\033[H\033[2J");
-                    valid = Game.move(player,large, small);
-                    if (valid == false){
-                        Game.printBoard();
-                        System.out.println("Place your token in a non filled spot");
-                    }
                     if(small <1 || small > 9){
                         Game.printBoard();
                         System.out.println("Please enter a valid number");
+                    }else{
+                        valid = Game.move(player,large, small);
+                        if (valid == false){
+                            Game.printBoard();
+                            System.out.println("Place your token in a non filled spot");
+                        }
                     }
                 }
                 if (Game.entireWins(player)){
