@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         boolean again = true;
+        Scanner input = new Scanner(System.in);
         while (again == true){
             boolean gaming = true;
             int turns = 1;
@@ -12,7 +13,6 @@ public class Main {
             boolean rules = false;
             boolean mainMenu = true;    
             int large = 0;
-            Scanner input = new Scanner(System.in);
             while (mainMenu== true){
                 System.out.println("Welcome to Ultimate Tic Tac Toe! \n 1. Play Game \n 2. Rules");
                 int answer = input.nextInt();
@@ -46,6 +46,9 @@ public class Main {
             int player = 0;        
             while (gaming == true){
                 player = turns%2;
+                if (player == 0){
+                    player = 2;
+                }
                 Game.printBoard();
                 while (boardChoice == true){
                     System.out.println("Which Tic Tac Toe Board do want to go in. \n Formatted as \n [1] [2] [3] \n [4] [5] [6] \n [7] [8] [9]");
@@ -84,20 +87,21 @@ public class Main {
                 }
                 turns++;
             }
-
-        }
-        int answer = 0;
-        while (answer != 1 && answer !=2){
-            System.out.println("Would you like to play again? \n 1. Yes \n 2. No");
-            answer = input.nextInt();
-            if (answer != 1 && answer != 2){
-                System.out.println("Please enter a valid number");
+            int answer = 0;
+            while (answer != 1 && answer !=2){
+                System.out.println("Would you like to play again? \n 1. Yes \n 2. No");
+                answer = input.nextInt();
+                System.out.print("\033[H\033[2J");
+                if (answer != 1 && answer != 2){
+                    System.out.println("Please enter a valid number");
+                }
             }
-        }
-        if (answer == 1){
-            again = true;
-        }else{
-            again = false;
+            if (answer == 1){
+                again = true;
+            }else{
+                again = false;
+                System.out.println("Thank you for playing!");
+            }
         }
     
     }
