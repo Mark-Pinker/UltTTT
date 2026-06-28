@@ -76,7 +76,6 @@ public class Game{
         }
         if (board[lRow][lCol][sRow][sCol].equals(" - ")){
             board[lRow][lCol][sRow][sCol] = text;
-            printBoard();
             return true;
         }
 

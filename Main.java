@@ -42,6 +42,7 @@ public class Main {
                     System.out.print("\033[H\033[2J");
                 }
             }
+            Game.printBoard();
             boolean boardChoice = true;
             int player = 0;        
             while (gaming == true){
@@ -49,11 +50,14 @@ public class Main {
                 if (player == 0){
                     player = 2;
                 }
-                Game.printBoard();
-                while (boardChoice == true){
+                while (boardChoice == true || large < 1 || large > 9){
                     System.out.println("Which Tic Tac Toe Board do want to go in. \n Formatted as \n [1] [2] [3] \n [4] [5] [6] \n [7] [8] [9]");
                     large = input.nextInt();
                     System.out.print("\033[H\033[2J");
+                    if (large < 1 || large > 9){
+                        Game.printBoard();
+                        System.out.println("Please enter a valid number");
+                    }
                     if(Game.checkFullness(large)){
                         Game.printBoard();
                         System.out.println("That board is full, please choose another one");
@@ -64,7 +68,7 @@ public class Main {
                 }
                 Game.printBoard();
                 boolean valid = false;
-                while (valid == false){
+                while (valid == false || small < 1|| small > 9){
                     System.out.println("You are going in Tic Tac Toe Board " + large);
                     System.out.println("What box do want to go in. \n Formatted as \n [1] [2] [3] \n [4] [5] [6] \n [7] [8] [9]");
                     small = input.nextInt();
@@ -73,6 +77,10 @@ public class Main {
                     if (valid == false){
                         Game.printBoard();
                         System.out.println("Place your token in a non filled spot");
+                    }
+                    if(small <1 || small > 9){
+                        Game.printBoard();
+                        System.out.println("Please enter a valid number");
                     }
                 }
                 if (Game.entireWins(player)){
