@@ -14,7 +14,7 @@ public class Main {
             boolean mainMenu = true;    
             int large = 0;
             while (mainMenu== true){
-                System.out.println("Welcome to Ultimate Tic Tac Toe! \n 1. Play Game \n 2. Rules");
+                System.out.println("Welcome to Ultimate Tic Tac Toe! \n1. Play Game \n2. Rules");
                 int answer = input.nextInt();
                 System.out.print("\033[H\033[2J");
                 while (answer != 1 && answer != 2){
@@ -42,7 +42,6 @@ public class Main {
                     System.out.print("\033[H\033[2J");
                 }
             }
-            Game.printBoard();
             boolean boardChoice = true;
             int player = 0;        
             while (gaming == true){
@@ -51,7 +50,8 @@ public class Main {
                     player = 2;
                 }
                 while (boardChoice == true || large < 1 || large > 9){
-                    System.out.println("Which Tic Tac Toe Board do want to go in. \n Formatted as \n [1] [2] [3] \n [4] [5] [6] \n [7] [8] [9]");
+                    Game.printBoard();
+                    System.out.println("Which Tic Tac Toe Board do want to go in. \nFormatted as \n[1] [2] [3] \n[4] [5] [6] \n[7] [8] [9]");
                     large = input.nextInt();
                     System.out.print("\033[H\033[2J");
                     if (large < 1 || large > 9){
@@ -70,7 +70,7 @@ public class Main {
                 boolean valid = false;
                 while (valid == false || small < 1|| small > 9){
                     System.out.println("You are going in Tic Tac Toe Board " + large);
-                    System.out.println("What box do want to go in. \n Formatted as \n [1] [2] [3] \n [4] [5] [6] \n [7] [8] [9]");
+                    System.out.println("What box do want to go in. \nFormatted as \n[1] [2] [3] \n[4] [5] [6] \n[7] [8] [9]");
                     small = input.nextInt();
                     System.out.print("\033[H\033[2J");
                     if(small <1 || small > 9){
@@ -98,7 +98,7 @@ public class Main {
             }
             int answer = 0;
             while (answer != 1 && answer !=2){
-                System.out.println("Would you like to play again? \n 1. Yes \n 2. No");
+                System.out.println("Would you like to play again? \n1. Yes \n2. No");
                 answer = input.nextInt();
                 System.out.print("\033[H\033[2J");
                 if (answer != 1 && answer != 2){
