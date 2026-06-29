@@ -1,18 +1,30 @@
-Ultimate Tic Tac Toe
+What is raw format? I searched it up and I just did this. Please tell me if it's wrong or anything and how to fix it.
+
+# Ultimate Tic Tac Toe
 A game that is Tic Tac Toe within Tic Tac Toe where you play against your opponent and your moves affect which Tic Tac Toe board they can go in.
 
-You can just copy and paste this and run it in any java complier. Nothing too complicated. You can also click this link https://onecompiler.com/java/44tmrdy28. Drag the left side of 
-the screen all the way to the left and press run. One thing is that the System.out.print("\033[H\033[2J"); statements sometimes don't work in all compliers so you may need to replace
-it with the Game.clear(); function which is already added. The code played in the link above has the Game.clear function already so you can also copy and paste that.
+## Launching 
+
+You can just copy and paste this and run it in any java complier. Nothing too complicated.  One thing is that the System.out.print("\033[H\033[2J"); 
+statements sometimes don't work in all compliers so you may need to replace it with the Game.clear(); function which is already added. The code contained in the link below
+has the statements replaced with the Game.clear() function so you can also copy and paste the code that you see there.
+
+You can also click this link https://onecompiler.com/java/44tmrdy28. Drag the left side of the screen all the way to the left and press run.
+
+## Controls
 
 The main controls are the number buttons 1-9 where each number corresponds to a board/space. You choose the board/space you want to play in by typing the corresponding number 
 according to the diagram shown in game.
+
+## Rules
 
 This is Ultimate Tic Tac Toe which is Tic Tac Toe within Tic Tac Toe, which means you have to win at least three separate Tic Tac Toe games to win. Each move you
 make determines which Tic Tac Toe board your opponent has to play in. When a board is full, you can simply choose which one. This program allows you to play that,
 guiding you through each step
 
 <img width="408" height="542" alt="Screenshot 2026-06-27 180650" src="https://github.com/user-attachments/assets/659108c3-6391-432d-898e-627fd38f917c" />
+
+##  General Game Origin, Inspirations and Creative Process
 
 This is a game I learned about from Michael Vsauce and I learned Java and 2d arrays in my AP Computer Science A class so I thought 
 It would be a complicated challenge for me. It somewhat was but after a bit of thinking, I managed to make it work. Displaying the original board
